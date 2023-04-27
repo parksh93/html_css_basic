@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+        <style>
+            /* before와 after는 content를 넣어줘야한다 */
+            li::before{
+                content: '가나다라';
+                width: 10px;
+                height: 10px;
+                background-color: blue;
+            }
+            li::after{
+                content: '가나다라';
+                width: 10px;
+                height: 10px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ul>li{$}*10 -->
+        <!-- ul>li{안녕$}*10 : li태그에 안녕1 ~ 안녕10까지 채워서 만들어줌-->
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+    </body>
+</html>
